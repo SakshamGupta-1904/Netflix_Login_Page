@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="Js.js" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <img src="netflixsite (1).png" alt="Netflix Logo" class="logo"/>
+    <div class="header-controls">
+      <select name="language" class="language-select">
+        <option value="English">🌐 English</option>
+        <option value="Hindi">🌐 Hindi</option>
+      </select>
+      <button class="btn btn-signin" id="sign">Sign In</button>
+    </div>
+  </header>
+
+  <!-- Landing Page -->
+  <section class="hero" id="home-page">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="email-form">
+        <input type="email" placeholder="Email address" id="email-input"/>
+        <button class="btn btn-start" id="start">Get Started ></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TV Feature -->
+  <section class="feature">
+    <div class="text-content">
+      <h1>Enjoy on your TV</h1>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+    </div>
+    <div class="media-content">
+      <img src="tv.png" alt="TV"/>
+      <video autoplay muted loop>
+        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"/>
+      </video>
+    </div>
+  </section>
+
+  <!-- Mobile Feature -->
+  <section class="feature reverse">
+    <div class="media-content">
+      <img src="mobile-0819.jpg" alt="Mobile"/>
+    </div>
+    <div class="text-content">
+      <h1>Download your shows to watch offline</h1>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+  </section>
+
+  <!-- Login Page -->
+  <section class="login" id="login-page" style="display: none;">
+    <h1>Sign In</h1>
+    <form id="login-form">
+      <input type="email" placeholder="Email address" id="login-email" required/>
+      <input type="password" placeholder="Password" id="login-password" required/>
+      <button class="btn btn-login" type="submit">Login</button>
+    </form>
+    <a href="#" onclick="hideLogin()" class="back-link">← Back to Home</a>
+  </section>
+</body>
+</html>
