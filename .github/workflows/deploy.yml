@@ -7,7 +7,7 @@ on :
     branches: ["main"]
 jobs:
   delpoy:
-    runs_on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name: checkout code
         uses: actions/checkout@v4
